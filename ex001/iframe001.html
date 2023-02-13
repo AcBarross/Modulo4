@@ -10,7 +10,8 @@
         /* comdando css e  prioritario em relacao aso inline no iframe */
         
         iframe {
-            width: 600px;
+            width: 400px;
+            height: 400px;
         }
     </style>
 </head>
@@ -18,11 +19,14 @@
 <body>
     <h1>Testando o uso do Iframe</h1>
     <!-- iframe e inline -->
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com/cursos/" frameborder="0" width="400px" height="400px"></iframe></p>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com/cursos/" frameborder="0" width="400px" height="300px"><a href="https://github.com/AcBarross/Modulo4.git" target="_blank">Curso em Video</a></iframe>
+    </p>
     <!-- Alguns sites tem protecao contra os iframes...ex.google -->
     <!--  <p>acessando o site do <iframe src="https://www.google.com/" frameborder="0"></iframe></p> -->
     <!-- um iframe tamanho padrao 300x150 -->
-    <p>Encontra formacao gratuitas no site <iframe src="https://upskill.pt/" frameborder="0"></iframe></p>
+    <p>Encontra formacao gratuitas no site
+        <iframe src="https://upskill.pt/" frameborder="0"><a href="https://upskill.pt/">UpSkill</a></iframe>
+    </p>
 
 
 </body>
