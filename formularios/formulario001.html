@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <h1>Meu primeiro fomulario</h1>
+</body>
+<!-- Label serve para relacionar o elemento ao seu input, para facilitar os mecanismos de busca, usa sempre o ID NA TAG for ..
+action serve para enviar os dados inseridos para um servidor..
+Metodo GET e por padrao no form(os dados introduzidos aparecem no url na barra de menu e os links de busca podem ser partilhados, limite sao 3000kb)
+Metodo POST- esconde os dados no url -->
+<form action="cadastro.php" method="get" autocomplete="off">
+    <p><label for="i_nome">Nome:</label> <input type="text" name="nome" id="i_nome"></p>
+    <p><label for="i_Apelido">Apelido:</label> <input type="text" name="i_Apelido" id="Apelido"></p>
+    <p><input type="submit" value="Enviar"></p>
+</form>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <!-- Escolhendo o type password na tag input, encripta a senha de usario
+    comando required exige preenchimento obrigatorio
+minlength e maxlength contro a quantidade de caratcteris no preenchimento -->
+    <h1>Teste do formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="i_usuario">Usario</label>
+            <input type="text" name="usario" id="i_usuario" required minlength="5" maxlength="10" placeholder="Nome do Usario" autocomplete="username">
+        </div>
+        <div>
+            <label for="i_senha">Senha</label>
+            <input type="password" name="senha" id="i_senha" required minlength="4" maxlength="20" placeholder="password" autocomplete="new-password">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+
+</html>
