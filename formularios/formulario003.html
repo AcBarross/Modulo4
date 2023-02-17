@@ -10,16 +10,25 @@
 
 <body>
     <h1>Datas e Time no formulario</h1>
-    <form action="cadastro.php" autocomplete="on">
+    <form action="main.html" autocomplete="on" method="get" target="_blank">
         <p>
-            <label for="i_nome">Nome</label> <input type="text" name="nome" id="i_nome" required maxlength="30" placeholder="Nome Completo" autocomplete="username">
+            <label for="i_nome">Nome</label> <input type="text" name="nome" id="i_nome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
         </p>
         <p>
             <label for="i_media">Media</label>
-            <input type="number" name="media" id="i_media" required placeholder="Media" autocomplete="media" min="0" max="10" step="0.1">
+            <input type="number" name="media" id="i_media" required placeholder="0 a 10" autocomplete="Media" min="0" max="10" step="0.1">
+        </p>
+        <!-- Atributo value faz com que o firmulario inicia com um valor inicial -->
+        <P>
+            <label for="i_dia">Dia da prova</label>
+            <input type="date" name="dia" id="i_dia" required autocomplete="dia">
+        </P>
+        <p>
+            <label for="i_hora">Hora da Prova</label>
+            <input type="time" name="hora" id="i_hora" placeholder="HH:MM">
         </p>
         <p><label for="i_mes">Periodo Lectivo</label>
-            <input type="month" name="mes" id="i_mes">
+            <input type="month" name="mes" id="i_mes" value="2023-02">
         </p>
         <p>
             <input type="submit" value="Enviar">
