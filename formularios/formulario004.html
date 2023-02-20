@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+        body {
+            background-image: url(https://media.gettyimages.com/id/455692374/pt/foto/in-this-photo-illustration-the-netflix-logo-is-seen-on-september-19-2014-in-paris-france.jpg?s=612x612&w=gi&k=20&c=4YB7JreyM_frny_MTgYxLpF40K7KrMRaj01SKcC8hkY=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        fieldset {
+            width: 400px;
+            height: 600px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.602);
+            color: white;
+            font-weight: bolder;
+            text-shadow: 5px 5px 2px rgba(9, 9, 9, 0.224);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        fieldset>p {
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        fieldset>legend {
+            color: rgba(242, 243, 247, 0.633);
+            font: 30px "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        
+        #button {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .input>input {
+            width: 300px;
+            display: block;
+            background-color: rgb(247, 242, 242);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo Formulario</h1>
+    <form action="main.html" method="get" autocomplete="on">
+        <!-- Usa se tag fieldset para agrupar os dados  -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p class="input">
+                <label for="i_nome">Nome </label>
+                <input type="text" name="nome" id="i_nome" required autocomplete="name" placeholder="Nome" />
+
+            </p>
+            <p class="input">
+                <label for="i_apelido">Apelido </label>
+                <input type="text" name="apelido" id="i_apelido" required autocomplete="name" placeholder="Apelido" />
+
+            </p>
+            <p class="input">
+                <label for="i_email">Email</label>
+                <input type="email" name="email" id="i_email" autocomplete="email" required placeholder="email" />
+            </p>
+            <!-- Regex - expressoes regulares - estudar depois
+                pattern -->
+            <p class="input">
+                <label for="i_tel">Telefone</label>
+                <input type="tel" name="tel" id="i_tel" autocomplete="name" pattern="^[0-9]{9}$" required placeholder="contacto" minlength="9" maxlength="9" />
+            </p>
+            <p id="button">
+                <input type="submit" value="Login" />
+                <input type="reset" value="Reset" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
