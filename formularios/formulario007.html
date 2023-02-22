@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulario</title>
+</head>
+
+<body>
+
+</body>
+<form action="main.html" method="get" autocomplete="on">
+    <p>
+        <label for="i_est">Estado</label>
+        <select name="estado" id="i_est">
+            <option value="" selected >---Escolha---</option>
+            <optgroup label="Regiao Central">
+                <option value="LB">Lisboa</option>
+                <option value="CB">Coimbra</option>
+                <option value="PT">Porto</option>
+            </optgroup>
+
+            <optgroup label="Regiao Norte">
+                <option value="AV">Aveiro</option>
+                <option value="ST">Setubal</option>
+                <option value="BR">Braga</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="i_prof">Profissao</label>
+        <input type="text" name="prof" id="i_prof" list="i_list">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+    </p>
+</form>
+
+</html>
