@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Calcular idade</h1>
+    <form action="main.html" method="get" autocomplete="on">
+        <p>
+            <label for="i_ano">En que ano voce nasceu: </label>
+            <input type="number" name="ano" id="i_ano" min="1990" max="2023" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="i_idade">Sua idade e: </label>
+            <Output id="i_idade">0</Output>
+        </p>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            i_idade.innerHTML = Number(atual) - Number(i_ano.value)
+        }
+    </script>
+
+</body>
+
+</html>
