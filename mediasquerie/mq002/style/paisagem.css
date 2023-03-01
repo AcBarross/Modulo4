@@ -1,3 +1,8 @@
 @charset "utf-8";
 
 /* configuracoes tela deitado */
+
+body {
+    background-image: url("/mediasquerie/mq002/imagem/cev-landscape.jpg");
+    background-position: left bottom;
+}
