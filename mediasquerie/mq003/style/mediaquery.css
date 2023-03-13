@@ -25,3 +25,13 @@ grandes tela: acima 1200px*/
 /* tela phone */
 
 @media screen and (min-width: 600px) and (max-width:768px) {}
+
+
+/* tela tablet */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* tela desktop */
+
+@media screen and (max-width: 1200px) {}

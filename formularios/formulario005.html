@@ -10,22 +10,24 @@
 
 <body>
     <h1>Radio e CheckBox</h1>
-    <form action="main.html" method="get" autocomplete="on"></form>
-    <fieldset>
-        <!-- Os botoes de Radio tem que ter sempre mesmo nome, para poder conseguir selecionar as opcoes -->
-        <legend>Sexo</legend>
-        <input type="radio" name="sexo" id="i_masc" checked> <label for="i_masc">Maculino</label><br>
-        <input type="radio" name="sexo" id="i_fem"><label for="i_fem">Feminino</label>
-    </fieldset>
-    <fieldset>
-        <legend>Esportes Favoritos</legend>
-        <p>Escolha o seu desporto favorito:</p>
-        <input type="checkbox" name="fut" id="i_fut"><label for="i_fut">Futbol</label><br>
-        <input type="checkbox" name="bask" id="i_bask"><label for="i_bask">Basketbol</label><br>
-        <input type="checkbox" name="and" id="i_and"><label for="i_and">Andebol</label>
-    </fieldset>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    <form action="main.html" method="get" autocomplete="on">
+        <fieldset>
+            <!-- Os botoes de Radio tem que ter sempre mesmo nome, para poder conseguir selecionar as opcoes -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="i_masc"> <label for="i_masc">Maculino</label><br>
+            <input type="radio" name="sexo" id="i_fem" checked><label for="i_fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>Escolha o seu desporto favorito:</p>
+            <input type="checkbox" name="fut" id="i_fut" checked>
+            <label for="i_fut">Futbol</label><br>
+            <input type="checkbox" name="bask" id="i_bask"><label for="i_bask">Basketbol</label><br>
+            <input type="checkbox" name="and" id="i_and"><label for="i_and">Andebol</label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
 
 </body>
 
